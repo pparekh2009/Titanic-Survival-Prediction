@@ -1,0 +1,73 @@
+body {
+	/*background: #dbffe1;*/
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/RMS_Titanic_3.jpg/450px-RMS_Titanic_3.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+h1 {
+	color: #850000;
+	font-family: 'Verdana';
+}
+
+
+.form {
+	position: static;
+	background-color: #40cf58;
+	box-shadow: 2px 2px 5px #000000;
+	margin: auto;
+	width: 550px;
+	height: 300px;
+	border: 2px solid #40cf58;
+	border-radius: 10px;
+	text-align: left;
+	font-family: 'Helvetica';
+}
+
+label, select , input {
+	margin: 10px;
+	margin-left: 30px; 
+}
+
+input, select, option {
+	border-radius: 5px;
+	background-color: #dbffe1;
+}
+
+.submit {
+	width: 75px;
+	height: 25px;
+	box-shadow: 2px 2px 5px #000000;
+	border-radius: 20px;
+	border: 2px solid #dbffe1;
+}
+
+.submit:active {
+	box-shadow: 2px 2px 2px #000000
+}
+
+.prediction {
+	margin: auto;
+	margin-top: 20px;
+	box-shadow: 2px 2px 5px #000000;
+	background-color: #40cf58;
+	border: 2px solid #40cf58;
+	border-radius: 20px;
+	width: 20%;
+}
+
+.output {
+	background-color: #40cf58;
+	box-shadow: 2px 2px 5px #000000;
+	margin: auto;
+	width: 500px;
+	height: 30px;
+	border: 2px solid #40cf58;
+	border-radius: 10px;
+	text-align: center;
+	padding: 5px;
+	font-size: 24px;
+	font-family: 'Helvetica';
+}

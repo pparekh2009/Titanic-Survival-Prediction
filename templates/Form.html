@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <!-- <link rel="stylesheet" href="Form.css"> -->
+        <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='Form.css') }}">
+        <!-- <style type="text/css">
+            body {
+                /*background: #dbffe1;*/
+                background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/RMS_Titanic_3.jpg/450px-RMS_Titanic_3.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                text-align: center;
+            }
+
+            h1 {
+                color: #850000;
+                font-family: 'Verdana';
+            }
+
+
+            .form {
+                position: static;
+                background-color: #40cf58;
+                box-shadow: 2px 2px 5px #000000;
+                margin: auto;
+                width: 550px;
+                height: 300px;
+                border: 2px solid #40cf58;
+                border-radius: 10px;
+                text-align: left;
+                font-family: 'Helvetica';
+            }
+
+            label, select , input {
+                margin: 10px;
+                margin-left: 30px; 
+            }
+
+            input , select, option {
+                border-radius: 5px;
+                background-color: #dbffe1;
+            }
+
+            .submit {
+                width: 75px;
+                height: 25px;
+                box-shadow: 2px 2px 5px #000000;
+                border-radius: 20px;
+                border: 2px solid #dbffe1;
+            }
+
+            .submit:active {
+                box-shadow: 2px 2px 2px #000000
+            }
+
+            .prediction {
+                margin: auto;
+                margin-top: 20px;
+                box-shadow: 2px 2px 5px #000000;
+                background-color: #40cf58;
+                border: 2px solid #40cf58;
+                border-radius: 20px;
+                width: 20%;
+            }
+        </style> -->
+    </head>
+    <body>
+        <h1>Titanic Survival Prediction Form</h1>
+  
+        <div class="form">
+            <form method="POST"  method="POST" action="/">
+                <label for="pclass">Pclass</label>
+                <select id="pclass" name="pclass">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <br>
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
+                </select>
+                <br>
+                <label for="age">Age</label>
+                <input type="text" name="age" id="age">
+                <br>
+                <label for="sibsp">Siblings / Spouse Aboard</label>
+                <input type="text" name="sibsp" id="sibsp">
+                <br>
+                <label for="parch">Parents / Children Aboard</label>
+                <input type="text" name="parch" id="parch">
+                <br>
+                <label for="fare">Fare</label>
+                <input type="text" name="fare" id="fare">
+                <br>
+                <input class="submit" type="submit" value="Submit">
+            </form>
+        </div>
+
+        <br><h4 class='output'>{{pred}}</h4>
+    </body>
+</html>
